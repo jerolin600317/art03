@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=0.35,maximum-scale=5.0, user-scalable=yes"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="线上游戏平台">
+<title>蜀客网</title>
+<link href="images/20151205_16X16_yu_logo.ico" rel="SHORTCUT ICON">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="old_css/style.css" rel="stylesheet" type="text/css">
+<link href="datepicker/css/datepicker.css" rel="stylesheet" type="text/css">
+<script> 
+function setHomepage(){//設為首頁
+	if (document.all){
+		document.body.style.behavior='url(#default#homepage)';
+		  document.body.setHomePage(window.location.href);
+	}else if (window.sidebar){
+		if(window.netscape){
+			try{
+				netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+			}catch (e){
+				alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" );
+			}
+		}
+		var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+		prefs.setCharPref('browser.startup.homepage',window.location.href);
+	}else{
+		alert('您的浏览器不支持自动自动设置首页, 请使用浏览器菜单手动设置!');
+	}
+}
+
+function addFavorite(){ //收藏我們 
+    if (document.all){    
+        try{    
+            window.external.addFavorite(window.location.href,document.title);    
+        }catch(e){    
+            alert( "加入收藏失败，请使用Ctrl+D进行添加" );    
+        }    
+   
+    }else if (window.sidebar){    
+        window.sidebar.addPanel(document.title, window.location.href, "");    
+     }else{    
+        alert( "加入收藏失败，请使用Ctrl+D进行添加" );    
+    }    
+}  
+</script>
+<script type="text/javascript">//複製推廣連結 
+function copyUrl_01() 
+{ 
+var Url_01=document.getElementById("biao_01"); 
+Url_01.select(); // 选择对象 
+document.execCommand("Copy"); // 执行浏览器复制命令 
+alert("已复制好，可贴粘。"); 
+} 
+</script> 
+</head>
+
+<body style="background-image: url(images/20160719135327_372.jpg);">
+<!--背景圖寫在外面,程式會不會較好套?-->
+<div class="index_bg">
+  <div class="content">
+    <div class="top_menu_bg"> <a href="index.html" class="index_link pull-left"></a>
+      <div class="top_menu_content pull-left">
+        <div class="top_menu_intention"><a href="javascript:setHomepage();"><i class="icon-home"></i>&nbsp;设为首页</a>&nbsp;&nbsp;<a href="javascript:addFavorite();"><i class="icon-star"></i>&nbsp;收藏我们</a>&nbsp;&nbsp;<a href="#all_game" data-toggle="modal"><i class="icon-th-list"></i>&nbsp;所有游戏</a>&nbsp;&nbsp;<a href="#w_login" data-toggle="modal"><i class="icon-hand-right"></i>&nbsp;登录</a>／<a href="#"><i class="icon-edit"></i>&nbsp;注册</a><!--登入後切換成這樣式<a href="#"><i class="icon-user"></i>&nbsp;jerolin12345</a>／<a href="#"><i class="icon-hand-left"></i>&nbsp;登出</a>--></div>
+        <div>
+          <ul class="nav nav-pills pull-right">
+            <li><a href="index.html">首&nbsp;&nbsp;&nbsp;页<span>INDEX</span></a></li>
+            <li><a href="http://pay.shukew.com/order/index.shtml">充值中心<span>RECHARGE CENTER</span></a></li>
+            <li><a href="easy_get.html">轻松拿<span>NTEGRAL MALL</span></a></li>
+            <li><a href="happy_earn.html">快乐赚<span>ACTIVITY CENTER</span></a></li>
+            <li><a href="#">移动游戏<span>MOBLE GAMES</span></a></li>
+            <li><a href="member_centre.html">会员中心<span>MEMBER CENTER</span></a></li>
+            <li><a href="service.html">客服中心<span>SERVICE CENTER</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="clear"></div>
+    </div>
+    <div class="middle">
+      <hr>
+      <div class="side_left pull-left">
+        <h2 class="title">快乐赚</h2>
+				<a href="article_list_n.html" class="active">新闻活动</a> 
+				<a href="article_list_s.html">开服预告</a></div>
+      <div class="member_con pull-left">
+        <p class="bread"><a href="javascript:;">首页</a> &gt; <a href="article_list_n.html">新闻活动</a></p>
+        <div class="row-fluid">
+        <table class="table article_list">
+  <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+   <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+   <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+   <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+   <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+   <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+   <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+   <tr>
+    <td><h5><a href="article_content.html">《风暴大陆》9月28日 15:00 好礼迎新川蜀231服！<small class="pull-right day">2016-09-27</small></a></h5></td>
+  </tr>
+</table>
+<div class="pagination text-center">
+                <ul>
+                  <!--可依不同情況自訂連結。使用 .disabled 指出不能點擊，使用 .active 指出這是當前頁面。-->
+                  <li class="disabled"><a href="#">首页</a></li>
+                  <li class="disabled"><a href="#">上一页</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">下一页</a></li>
+                  <li><a href="#">末页</a></li>
+                </ul>
+              </div><div class="text-center">總共235筆記錄</div>
+        </div>
+      
+      </div>
+      <!--end-->
+      <div class="clear"></div>
+    </div>
+    <div class="friendly_link">
+      <hr>
+      <div class="block_title">友情链接</div>
+      <div class="row-fluid"><!--可以設置成後台增加,尺寸大小我css都設置好的--> 
+        <a href="#"><img src="images/9k9k_logo.gif"></a> <a href="#"><img src="images/logo.gif"></a> <a href="#"><img src="images/juxialogo.gif"></a> <a href="#"><img src="images/aicunfu.jpg"></a> <a href="#"><img src="images/9k9k_logo.gif"></a> <a href="#"><img src="images/logo.gif"></a> <a href="#"><img src="images/juxialogo.gif"></a> <a href="#"><img src="images/aicunfu.jpg"></a> <a href="#"><img src="images/9k9k_logo.gif"></a> <a href="#"><img src="images/logo.gif"></a> <a href="#"><img src="images/juxialogo.gif"></a> <a href="#"><img src="images/aicunfu.jpg"></a> <a href="#"><img src="images/9k9k_logo.gif"></a> <a href="#"><img src="images/logo.gif"></a> <a href="#"><img src="images/juxialogo.gif"></a> <a href="#"><img src="images/aicunfu.jpg"></a>
+        <div class="clear"></div>
+      </div>
+      <hr>
+    </div>
+    <div class="copyright text-center">
+      <p><a href="javascript:;">公司介绍</a> | <a href="../footer/recruitment.shtml?sign=kefu">招聘信息</a> | <a href="javascript:;">加入我们</a> | <a href="http://www.shukew.com/index/service.shtml">客服服务</a> | <a href="javascript:;">企业文化</a> | <a href="../footer/contactUs.shtml?sign=swhz">联系我们</a></p>
+      <p> <a href="http://net.china.com.cn/index.htm" target="_blank" rel="nofollow"> <img src="images/down_blxx.gif"> </a> &nbsp;&nbsp; <a href="http://www.hngawj.net/" target="_blank" rel="nofollow"> <img src="images/down_110.gif"> </a> &nbsp;&nbsp; <a href="http://www.anquan.org/s/www.4zhan.com" target="_blank" name="zew83MOanin0cysoiChuySo9qznvxMTNDlD6kJjUUlYCEVfcPe"> <img src="images/anquan.png"> </a> &nbsp;&nbsp; <a href="http://www.hngawj.net/" target="_blank" rel="nofollow"> <img src="images/a2.gif"> </a> &nbsp;&nbsp; <a href="http://www.cogcpa.org/" target="_blank" rel="nofollow"> <img src="images/a3.jpg"> </a> </p>
+      <p>健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排 时间享受健康生活</p>
+      <p>Shukew.com 江油市易游网络科技有限公司 版权所有　江油市东胜路117号电子商务创业中心402-404 0816-5115557</p>
+    </div>
+  </div>
+</div>
+
+<!-- 彈窗登錄 -->
+<div id="w_login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <div class="block_title">帐号登录</div>
+  </div>
+  <form action="personal_center.html" method="post" class="form-horizontal">
+    <div class="modal-body">
+      <div class="login_content">
+        <div class="row container-fluid">
+          <div class="input-prepend"> <span class="add-on"><i class="icon-user"></i>&nbsp;帐号</span>
+            <input class="input-xlarge" id="prependedInput" type="text" placeholder="请输入会员帐号">
+          </div>
+          <p></p>
+          <div class="input-prepend"> <span class="add-on"><i class="icon-asterisk"></i>&nbsp;密码</span>
+            <input class="input-xlarge" id="prependedInput" type="password" placeholder="请输入密码">
+          </div>
+          <p></p>
+          <div class="input-prepend input-append"><span class="add-on"><i class="icon-lock"></i>&nbsp;验证</span>
+            <input type="text" class="input-xlarge" id="prependedInput" placeholder="请输入验证码">
+            <span class="add-on" style="padding:0px;"><img src="images/1418719022-2238644537.jpg" style="height:29px"></span>
+            <button class="btn" type="button" onclick="newCaptcha()"><i class="icon-refresh"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="row-fluid">
+        <div class="span12">
+          <button class="btn btn-warning btn-large btn-block" type="submit" value=""><i class="icon-hand-right icon-white"></i>&nbsp;登录</button>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </form>
+</div>
+
+<!-- 彈窗所有遊戲-->
+<div id="all_game" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <div class="block_title">网页游戏</div>
+  </div>
+  <div class="modal-body">
+    <ul class="breadcrumb">
+      <li><a href="#"><i class="icon-play"></i>&nbsp;热血航海王</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;蓝月传奇</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;魔晶幻想</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;创世封神</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;天神战</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;传奇皇朝</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;酒神</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;仙侠道2</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;大皇城</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;战国之怒</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;热血航海王</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;蓝月传奇</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;魔晶幻想</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;创世封神</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;天神战</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;传奇皇朝</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;酒神</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;仙侠道2</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;大皇城</a></li>
+      <li><a href="#"><i class="icon-play"></i>&nbsp;战国之怒</a></li>
+    </ul>
+    <!--可以寫成自動產生,上架一款新遊戲就會多--> 
+  </div>
+</div>
+
+<!-- 彈窗分享平台-->
+<div id="share_shuke" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <div class="block_title">分享蜀客网</div>
+  </div>
+  <div class="modal-body">
+    <ul class="breadcrumb">
+      <li class="text-center"><a href="#"><img src="images/QQf_icon_40X40.png"><br>QQ好友</a></li>
+      <li class="text-center"><a href="#"><img src="images/QQz_icon_40X40.png"><br>QQ空间</a></li>
+      <li class="text-center"><a href="#"><img src="images/weibo_icon_40X40.png"><br>微博</a></li>
+      <li class="text-center"><a href="#"><img src="images/wechat_icon_40X40.png"><br>微信</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
